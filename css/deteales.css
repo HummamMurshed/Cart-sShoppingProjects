@@ -1,0 +1,33 @@
+.container .products {
+  width: 80%;
+  box-shadow: 1px 2px 5px #ddd;
+  margin: auto;
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .products .item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.container .products .item img {
+  width: 100%;
+  height: 400px;
+}
+.container .products .description a {
+}
+.container .products .description {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container .products .action button {
+  width: 100%;
+}

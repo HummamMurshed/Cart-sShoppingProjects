@@ -1,0 +1,39 @@
+.edit-profile-page {
+}
+.edit-profile-page .container {
+}
+.edit-profile-page .container form {
+  width: 100%;
+  /* background-color: #0075ff; */
+  padding: 20px;
+}
+.edit-profile-page .container form select,
+.edit-profile-page .container form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  display: block;
+  color: var(--main-color);
+}
+.edit-profile-page .container form input:focus {
+  outline: none;
+  border: 1px solid var(--main-color);
+}
+
+.heart-icon {
+  display: none;
+}
+.edit-profile-page .container form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  behavior: smooth;
+  transition: 0.3s;
+}
+.edit-profile-page .container form input[type="submit"]:hover {
+  background-color: var(--main-alt-color);
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <title>shoping Cart | Home Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="brand" href="index.html ">Shopping Cart</a>
+          <nav>
+            <ul id="links">
+              <li><a href="login.html">Sign In</a></li>
+
+              <li><a href="register.html">Sign Up</a></li>
+            </ul>
+            <ul id="user-info">
+              <li><a href="#" id="user"></a></li>
+              <li><a href="myproducts.html"> MyProducts</a></li>
+              <li><a href="cartproducts.html"> Favorite</a></li>
+              <li><a href="profile.html">My Profile</a></li>
+
+              <li id="shoop">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge">0</span>
+                <div class="carts-product">
+                  <div class="product"></div>
+                  <a href="cartproducts.html">Veiw All Products</a>
+                </div>
+              </li>
+              <li><a id="logout">Log Out</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="profile-page">
+      <div class="container">
+        <div class="parent">
+          <img src="image/myimage.JPG" alt="" class="user-avatar" />
+          <h2 id="username">Hummam</h2>
+          <h2 id="product-length">
+            Product Length:
+            <span></span>
+          </h2>
+          <h2 id="email">Kshakshly@gmial.com</h2>
+          <a id="editprofile" href="editprofile.html">Edit Profile</a>
+
+          <a href="createproduct.html" class="create-product">
+            <i class="fa fa-plus"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/userchecked.js"></script>
+    <script src="js/showBadge.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>

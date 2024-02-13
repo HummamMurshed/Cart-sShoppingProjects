@@ -1,0 +1,345 @@
+:root {
+  --main-font: Arial;
+  --main-black-color: #333;
+  --main-alt-black-color: #333333c9;
+  /* --main-color: #333; */
+  --main-color: #0077ff;
+  /* --main-alt-color: #333333c9; */
+  --main-alt-color: #0075ffd4;
+}
+
+/* :root {
+  --main-color: #10cab7;
+  --secondry-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+} */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+}
+
+.container {
+  background-color: transparent;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  background-color: var(--main-color);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-content .brand {
+  font-size: 3.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .header-content nav {
+}
+header .header-content nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+header .header-content nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  min-width: 50px;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+
+header .header-content nav ul#user-info {
+  /* display: none; */
+  /* display: flex; */
+}
+header .header-content nav ul#user-info li {
+  position: relative;
+  margin: 0 7px;
+}
+header .header-content nav ul li i {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+/* nav ul li i {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+} */
+header .header-content nav ul#user-info li .badge {
+  display: block;
+  color: white;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  top: -10px;
+  right: -11px;
+  line-height: 20px;
+  font-size: 1rem;
+  display: none;
+}
+header .header-content nav ul#user-info li .carts-product {
+  position: absolute;
+  width: 200px;
+  background-color: #ffffff;
+  transform: translate(-41px, 0);
+  top: 39px;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  font-size: 1.4rem;
+  display: none;
+  transition: 0.2s;
+  behavior: smooth;
+  color: var(--main-color);
+  z-index: 3;
+}
+
+header .header-content nav ul#user-info li .carts-product a {
+  display: block;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0;
+  border: 2px solid transparent;
+}
+.displayBlock {
+  display: block;
+}
+/* =======================Start Form================================ */
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  background-color: var(--main-color);
+  padding: 20px;
+}
+.section-form h2 {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+}
+.section-form form {
+  font-size: 1.4rem;
+}
+.section-form form input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  outline: none;
+}
+.section-form form input[type="submit"] {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  height: auto;
+  color: #0075ff;
+  background: #ffeb3b;
+}
+.section-form form input[type="submit"]:hover {
+  /* opacity: 0.8; */
+  background: #ffeb3beb;
+}
+.edit {
+  background-color: var(--main-color);
+  width: 70px;
+  color: white;
+  border: none;
+  padding: 3px 4px;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.edit:hover {
+  background-color: var(--main-alt-color);
+  letter-spacing: 1px;
+}
+/* =======================End Form================================ */
+
+/* =======================Start Products================================ */
+.home {
+}
+.home .container {
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+.home .container input {
+  display: block;
+  margin-top: 10px;
+  width: 60%;
+  padding: 6px;
+  height: 30px;
+  border-radius: 4px;
+  outline: none;
+  color: var(--main-color);
+  font-weight: bold;
+  position: relative;
+  border: 1px solid var(--main-color);
+}
+.home .container .in {
+  position: sticky;
+  top: 45px;
+  display: flex;
+  align-items: center;
+}
+.home .container .in .search-icon {
+  margin-left: -20px;
+  margin-top: 10px;
+  z-index: 1;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+.container .hold-product {
+  display: flex;
+  gap: 0px;
+}
+.container .products {
+  width: 60%;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+.container .search-fillter {
+  /* width: 30%; */
+  flex: 1;
+  margin-top: -31px;
+  /* z-index: 1; */
+}
+.container .search-fillter #size-filter {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  position: sticky;
+  top: 54px;
+  outline: none;
+  z-index: 1;
+}
+.container .products .item {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.container .products .item img {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.container .products .description {
+  /* background-color: yellow; */
+}
+.container .products .description a {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .products .description a:hover {
+  color: #0075ff;
+}
+.container .products .action {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container .products .action .addtocart {
+  display: block;
+  margin-left: auto;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.home .create-product:hover,
+.container .products .action .addtocart:hover {
+  background-color: var(--main-alt-color);
+}
+.container .products .action .favorite {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  margin-left: auto;
+}
+.go-to-register {
+  color: #ffeb3b;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+/* =======================End Products================================ */
+/* =======================Start Style Create Product Button================================ */
+.create-product {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* =======================End Style Create Product Button================================ */
